@@ -273,7 +273,7 @@ const USD=n=>'$'+n.toLocaleString('en',{minimumFractionDigits:2,maximumFractionD
 
 // ── API CALLS ──
 async function api(path,body){
-  const r=await fetch('/'+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body||{})});
+  const r=await fetch('/api/'+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body||{})});
   return r.json();
 }
 
